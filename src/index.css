@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222222
+
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  @apply py-2 px-8 border-white border-2 bg-transparent text-white
+}
+
+.heading{
+  @apply text-white font-bold text-4xl md:text-5xl xl:text-6xl; 
+}
+
+.hero{
+  background: url("./images/background-image.jpg") no-repeat center/cover;
+  height: calc(100vh - 0.1px);
+}
+
+.hero .overlay{
+  background-color: rgba(0,0,0,0.3);
+  height: calc(100vh - 0.1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.articles{
+  @apply p-5 rounded-lg shadow shadow-zinc-800 text-white text-sm
+}
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.loading article{
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 3px solid #afafaf; 
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+.mt-10.bg-transparent{
+  width: 100%;
+  margin: 0px;
+}
+
+/* .mt-4.grid.grid-cols-1{
+  width: 100%;
+  height: 100vh;
+} */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);   
+  }
+}
