@@ -16,7 +16,7 @@ const SearchComponent = () => {
   };
 
   return (
-    <div className="mt-10 mx-auto max-w-screen-xl bg-transparent p-4 rounded-lg shadow-md md:bg-gray-100 w-4/5">
+    <div className="mt-10 mx-auto max-w-screen-xl bg-gray-100 p-4 rounded-lg shadow-md w-4/5">
       <h2 className="text-xl mb-4">Search SpaceX Capsule Data only</h2>
       <div className="flex space-x-4">
         <div className="flex-1">
