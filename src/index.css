@@ -37,7 +37,7 @@ body {
 }
 
 .hero .overlay{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   height: calc(100vh - 0.1px);
   display: flex;
   align-items: center;
